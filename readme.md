@@ -19,6 +19,14 @@ The Windows 2016 templates use the `packer-templates` Chef cookbook to provision
 
 This downloads all dependencies and saves them in vendor/cookbooks. From here packer will upload them to the image being built.
 
+## Ansible tests
+
+*-ansible.json files works for testing ansible with packer builds, just first tests to automate ansible tests. 
+
+Prerequisites:
+
+* [ansible](http://docs.ansible.com/ansible/latest/intro_installation.html) installed
+
 ## Invoking the template
 Invoke `packer` to run a template like this:
 ```
