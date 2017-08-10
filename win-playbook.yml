@@ -1,5 +1,8 @@
 
 - hosts: all
+  vars:
+    ansible_user: vagrant
+    ansible_password: vagrant
   tasks:
     - name: test winrm
       win_shell: Write-Host "Testing"
