@@ -1,9 +1,10 @@
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
 
-from ansible.plugins.connection.ssh import Connection as SSHConnection
+#from ansible.plugins.connection.ssh import Connection as SSHConnection
+from ansible.plugins.connection.winrm import Connection as WINRMConnection
 
-class Connection(SSHConnection):
+class Connection(WINRMConnection):
     ''' ssh based connections for powershell via packer'''
 
     transport = 'packer'

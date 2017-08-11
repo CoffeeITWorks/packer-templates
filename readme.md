@@ -26,6 +26,8 @@ This downloads all dependencies and saves them in vendor/cookbooks. From here pa
 Prerequisites:
 
 * [ansible](http://docs.ansible.com/ansible/latest/intro_installation.html) installed
+* [ansible-windows-requirements](http://docs.ansible.com/ansible/latest/intro_windows.html#installing-on-the-control-machine)
+* Virtualbox: fedora: use rpmfusion repo then: `dnf install VirtualBox-server kernel-devel`
 
 ## Invoking the template
 Invoke `packer` to run a template like this:
